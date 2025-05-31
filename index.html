@@ -214,23 +214,46 @@
         transform: translateY(0);
       }
     }
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    @media (max-width: 768px) {
-      .navbar {
-        padding: 10px 20px;
-        flex-direction: column;
-      }
+  .navbar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
 
-      .navbar ul {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 10px;
-      }
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
 
-      header h2 {
-        font-size: 2rem;
-      }
-    }
+  .navbar ul li a {
+    font-size: 0.9rem;
+    padding: 6px 0;
+    display: block;
+    width: 100%;
+  }
+
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  header a button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
   </style>
 
   <meta name="description" content="Jasuke Maz D - Camilan sehat berbahan dasar jagung manis lokal.">
