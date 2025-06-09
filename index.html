@@ -7,8 +7,6 @@
   <title>Jasuke Maz D</title>
   ...
 </head>
-
-  
   <style>
     * {
       margin: 0;
@@ -167,14 +165,16 @@
       background-color: #e65100;
     }
 
-    .profile, .contact {
-      max-width: 800px;
-      margin: auto;
-      background: #fff7e0;
-      padding: 40px 30px;
-      border-radius: 20px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    }
+    .profile-center {
+       text-align: center;
+       max-width: 800px;
+       margin: 0 auto;
+       background: #fff7e0;
+       padding: 40px 30px;
+       border-radius: 20px;
+       box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+     }
+
 
     .profile img {
       width: 140px;
@@ -261,127 +261,155 @@
   <nav class="navbar">
     <h1>JASUKE MAZ D</h1>
     <ul>
-      <li><a href="#home">Beranda</a></li>
-      <li><a href="#menu">Produk</a></li>
-      <li><a href="#profil">Profil</a></li>
-      <li><a href="#kontak">Kontak</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Product</a></li>
+      <li><a href="#about us">about us</a></li>
+      <li><a href="#Contact">Contact</a></li>
     </ul>
   </nav>
 
   <div class="wrapper">
     <!-- Hero -->
     <header id="home">
+      <section class="hero">
+  <div class="gallery" style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 3rem;">
+  </div>
+</section>
+
       <h2>JASUKE MAZ D</h2>
       <p>Nikmati kelezatan Jasuke yang hangat, praktis, dan penuh cinta lokal! Tersedia rasa Milo, Coklat, Keju, dan Kombinasi Lezat!</p>
       <a href="#menu"><button>Lihat Menu</button></a>
     </header>
-
+    
+ <!-- Profil -->
+<section class="about" id="about us">
+  <div class="profile-center">
+    <h3>About Us</h3>
+    <p>
+      <strong>Jasuke Maz D</strong> adalah sebuah usaha mikro yang dikelola oleh Dinar Jhonata,
+      berlokasi di Kost Pondok Barokah, Cimahi Selatan. UMKM ini hadir dengan misi untuk <em>menyediakan
+      camilan sehat dan nikmat yang diolah dari jagung lokal</em>, menjadikan setiap sajian tidak
+      hanya lezat, tetapi juga bernilai gizi tinggi.
+    </p>
+  </div>
+</section>  
     <!-- Produk -->
-    <section id="menu">
-      <h2 style="text-align:center; color:#e65100; margin-bottom:20px;">Varian Produk</h2>
-      <div class="products">
-        <div class="product-card">
-      <img src="jasuke 5.jpg" alt="Jasuke Original" />
-      <h3>Jasuke Original</h3>
-      <p>Rp 5.000 (10 OZ)</p>
-      <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Original"><button>WhatsApp</button></a>
-      <a href="https://www.instagram.com/jasuke_mazde/"><button>Instagram</button></a>
-      <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN"><button>Grabfood</button></a>
+   <section id="menu" style="background-color: #fff8dc; padding: 90px 165px;">
+  <div style="text-align: center;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 10px; color: #ff6f00;">Our Menus</h2>
+    <p style="color: #666;">Beragam pilihan Jasuke dengan cita rasa lokal favorit!</p>
+  </div>
+  
+  <div style="display: flex; justify-content: left; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
+    <!-- Menu 1 -->
+    <div style="width: 250px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; padding: 20px;">
+      <img src="orig.png" alt="Jasuke Original" style="width: 100%; border-radius: 15px;">
+      <h3 style="margin-top: 15px;">Jasuke Original</h3>
+      <p style="font-size: 0.9rem; color: #555;">Jagung manis hangat dengan susu dan keju parut.</p>
+    </div>
+    
+    <!-- Menu 2 -->
+    <div style="width: 250px; background: #fff; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; padding: 20px;">
+      <img src="cokju.png" alt="Jasuke Keju Coklat" style="width: 100%; border-radius: 15px;">
+      <h3 style="margin-top: 15px;">Keju Coklat</h3>
+      <p style="font-size: 0.9rem; color: #555;">Perpaduan manis dan gurih dari keju dan coklat meses.</p>
+    </div>
+    
+    <!-- Menu 3 -->
+    <div style="width: 250px; background: #fff; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; padding: 20px;">
+      <img src="cokmil.png" alt="Jasuke Keju Serut" style="width: 100%; border-radius: 15px;">
+      <h3 style="margin-top: 15px;">Coklat Milo</h3>
+      <p style="font-size: 0.9rem; color: #555;">Jagung manis dengan taburan coklat dan milo yang melimpah.</p>
     </div>
 
-    <div class="product-card">
-      <img src="jasuke 2.jpg" alt="Jasuke Milo" />
-      <h3>Jasuke Milo</h3>
-      <p>Rp 5.000 (10 OZ)</p>
-      <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Milo"><button>WhatsApp</button></a>
-      <a href="https://www.instagram.com/jasuke_mazde/"><button>Instagram</button></a>
-      <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN"><button>Grabfood</button></a>
+    <!-- Menu 4 -->
+    <div style="width: 250px; background: #fff; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; padding: 20px;">
+      <img src="coklat.png" alt="Jasuke Coklat" style="width: 100%; border-radius: 15px;">
+      <h3 style="margin-top: 15px;">Coklat</h3>
+      <p style="font-size: 0.9rem; color: #555;">Jagung manis dengan taburan coklat dan milo yang melimpah.</p>
     </div>
 
-    <div class="product-card">
-      <img src="jasuke 1.jpg" alt="Jasuke Coklat" />
-      <h3>Jasuke Coklat</h3>
-      <p>Rp 5.000 (10 OZ)</p>
-      <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Coklat"><button>WhatsApp</button></a>
-      <a href="https://www.instagram.com/jasuke_mazde/"><button>Instagram</button></a>
-      <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN"><button>Grabfood</button></a>
+    <!-- Menu 5 -->
+    <div style="width: 250px; background: #fff; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; padding: 20px;">
+      <img src="kemil.png" alt="Jasuke Keju Milo" style="width: 100%; border-radius: 15px;">
+      <h3 style="margin-top: 15px;">Keju Milo</h3>
+      <p style="font-size: 0.9rem; color: #555;">Jagung manis dengan taburan coklat dan milo yang melimpah.</p>
     </div>
 
-    <div class="product-card">
-      <img src="jasuke 6.jpg" alt="Jasuke Coklat Keju" />
-      <h3>Jasuke Coklat Keju</h3>
-      <p>Rp 8.000 (10 OZ)</p>
-      <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Coklat%20Keju"><button>WhatsApp</button></a>
-      <a href="https://www.instagram.com/jasuke_mazde/"><button>Instagram</button></a>
-      <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN"><button>Grabfood</button></a>
-    </div>
-
-    <div class="product-card">
-      <img src="jasuke 4.jpg" alt="Jasuke Keju Milo" />
-      <h3>Jasuke Keju Milo</h3>
-      <p>Rp 8.000 (10 OZ)</p>
-      <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Keju%20Milo"><button>WhatsApp</button></a>
-      <a href="https://www.instagram.com/jasuke_mazde/"><button>Instagram</button></a>
-      <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN"><button>Grabfood</button></a>
-    </div>
-
-    <div class="product-card">
-      <img src="jasuke 3.jpg" alt="Jasuke Coklat Milo" />
-      <h3>Jasuke Coklat Milo</h3>
-      <p>Rp 8.000 (10 OZ)</p>
-      <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Coklat%20Milo"><button>WhatsApp</button></a>
-      <a href="https://www.instagram.com/jasuke_mazde/"><button>Instagram</button></a>
-      <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN"><button>Grabfood</button></a>
+    <!-- Menu 6 -->
+    <div style="width: 250px; background: #fff; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; padding: 20px;">
+      <img src="milo.png" alt="Jasuke Milo" style="width: 100%; border-radius: 15px;">
+      <h3 style="margin-top: 15px;">Milo</h3>
+      <p style="font-size: 0.9rem; color: #555;">Jagung manis dengan taburan coklat dan milo yang melimpah.</p>
     </div>
   </div>
+  </section>
+
+
+  </section>
+    <section id="Contact" style="background-color: #fff8ec; padding: 80px 70px;">
+  <div style="text-align: center;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 10px; color: #ff6f00;">Pesan Sekarang</h2>
+    <p style="color: #555;">Langsung hubungi kami di Instagram, WhatsApp, dan Grabfood!</p>
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/jasuke_mazde/" target="_blank" style="text-decoration: none;">
+      <div style="width: 250px; background: #ffffff; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 30px; text-align: center;">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 70px; margin-bottom: 15px;">
+        <h3 style="color: #000;">@jasuke_mazde</h3>
+        <p style="color: #888;">Follow dan DM untuk order</p>
+      </div>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Original" target="_blank" style="text-decoration: none;">
+      <div style="width: 250px; background: #ffffff; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 30px; text-align: center;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 90px; margin-bottom: 15px;">
+        <h3 style="color: #000;">WhatsApp Kami</h3>
+        <p style="color: #888;">Klik untuk langsung chat</p>
+      </div>
+    </a>
+
+    <!-- Grabfood -->
+    <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN" target="_blank" style="text-decoration: none;">
+      <div style="width: 250px; background: #ffffff; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 30px; text-align: center;">
+        <img src="grab.png" alt="Grabfood" style="width: 80px; margin-bottom: 15px;">
+        <h3 style="color: #000;">Order Sekarang</h3>
+        <p style="color: #888;">Klik untuk order</p>
+      </div>
+    </a>
+  </div>
 </section>
-      </div>
-    </section>
 
-    <!-- Profil -->
-    <section id="profil">
-      <div class="profile" style="text-align:center;">
-        <h2>Profil UMKM</h2>
-        <p><strong>Nama UMKM:</strong> Jasuke Maz D</p>
-        <p><strong>Owner:</strong> Dinar Jhonata</p>
-        <p><strong>Alamat:</strong> Kost Pondok Barokah, Cimahi Selatan</p>
-        <p><strong>Misi:</strong> Menyediakan camilan sehat dan nikmat dari jagung lokal.</p>
-        <ul style="text-align:left; max-width: 500px; margin: 20px auto;">
-          <li>✅ Jagung manis lokal</li>
-          <li>✅ Pilihan rasa kekinian</li>
-          <li>✅ Cocok untuk anak-anak dan dewasa</li>
-        </ul>
-      </div>
-    </section>
 
-    <!-- Kontak -->
-    <section id="kontak">
-      <div class="contact" style="text-align:center;">
-        <h2>Kontak Kami</h2>
-        <p>📱 WhatsApp: <a href="https://wa.me/6283898101912">0838-9810-1912</a></p>
-        <p>📸 Instagram: <a href="https://www.instagram.com/jasuke_mazde/">@jasuke_mazde</a></p>
-        <p>📍 Lokasi Booth: Kost Pondok Barokah, Cimahi</p>
-      </div>
-    </section>
 
     <!-- Artikel -->
-    <section id="artikel">
-      <div class="artikel" style="background: #ffffff; border: 1px solid #e0e0e0; box-shadow: 0 8px 24px rgba(0,0,0,0.1); padding: 40px 30px; border-radius: 16px; animation: fadeInUp 1s ease-in-out; text-align: center;">
-        <h2 style="text-align:center; color:#e65100; animation: fadeIn 1.5s ease-in-out;">Transformasi UMKM Melalui Inovasi Produk Lokal</h2>
-        <p style="animation: fadeInUp 1s ease-in-out; text-align: justify; line-height: 2; color: #333; font-size: 1.05rem; margin: 0 auto 24px auto; max-width: 800px;">
-          Di tengah pesatnya perkembangan sektor Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia, banyak pelaku usaha yang terus berinovasi untuk menjaga daya saing dan menjawab kebutuhan pasar yang semakin dinamis. Salah satu contoh menarik dari inovasi ini adalah UMKM <strong>Jasuke Maz D</strong>, sebuah usaha rumahan yang mengangkat nilai lokal melalui produk camilan berbahan dasar jagung manis, susu, dan keju.lebih dikenal dengan sebutan Jasuke.
-        </p>
-        <p style="animation: fadeInUp 1.2s ease-in-out; text-align: justify; line-height: 2; color: #333; font-size: 1.05rem; margin: 0 auto 24px auto; max-width: 800px;">
-          Berdiri di kawasan Cimahi Selatan, Jasuke Maz D menawarkan lebih dari sekadar jajanan tradisional. Melalui pengembangan rasa seperti Milo, Coklat, dan kombinasi Keju-Coklat, Jasuke Maz D menyasar konsumen dari berbagai kalangan, mulai dari anak-anak sekolah hingga pekerja kantoran yang membutuhkan camilan praktis namun tetap lezat dan bergizi.
-        </p>
-        <p style="animation: fadeInUp 1.4s ease-in-out; text-align: justify; line-height: 2; color: #333; font-size: 1.05rem; margin: 0 auto 24px auto; max-width: 800px;">
-          Jasuke Maz D berkomitmen untuk menggunakan bahan baku lokal yang segar langsung dari petani setempat. Strategi ini bukan hanya meningkatkan kualitas produk, tapi juga memberdayakan ekonomi lokal. Penggunaan platform digital seperti WhatsApp, Instagram, dan GrabFood juga menjadi bagian dari strategi pemasaran modern Jasuke Maz D.
-        </p>
-        <p style="animation: fadeInUp 1.6s ease-in-out; text-align: justify; line-height: 2; color: #333; font-size: 1.05rem; margin: 0 auto 24px auto; max-width: 800px;">
-          Artikel ini disusun sebagai bagian dari tugas pengembangan digitalisasi UMKM dan diharapkan menjadi inspirasi bagi wirausahawan muda lainnya untuk terus berinovasi.
-        </p>
-      </div>
-    </section>
+<section id="artikel">
+  <div class="artikel" style="background: #ffffff; border: 1px solid #e0e0e0; box-shadow: 0 8px 24px rgba(0,0,0,0.1); padding: 40px 30px; border-radius: 16px; animation: fadeInUp 1s ease-in-out; text-align: center;">
+    <h2 style="text-align:center; color:#e65100; animation: fadeIn 1.5s ease-in-out; margin-bottom: 30px;">
+      Transformasi UMKM Melalui Inovasi Produk Lokal
+    </h2>
+
+    <p style="animation: fadeInUp 1s ease-in-out; text-align: center; line-height: 2; color: #333; font-size: 1.05rem; margin: 0 auto 24px auto; max-width: 800px;">
+      Di tengah pesatnya perkembangan sektor Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia, banyak pelaku usaha yang terus berinovasi untuk menjaga daya saing dan menjawab kebutuhan pasar yang semakin dinamis. Salah satu contoh menarik dari inovasi ini adalah UMKM <strong>Jasuke Maz D</strong>, sebuah usaha rumahan yang mengangkat nilai lokal melalui produk camilan berbahan dasar jagung manis, susu, dan keju. Lebih dikenal dengan sebutan Jasuke.
+    </p>
+
+    <p style="animation: fadeInUp 1.2s ease-in-out; text-align: center; line-height: 2; color: #333; font-size: 1.05rem; margin: 0 auto 24px auto; max-width: 800px;">
+      Berdiri di kawasan Cimahi Selatan, Jasuke Maz D menawarkan lebih dari sekadar jajanan tradisional. Melalui pengembangan rasa seperti Milo, Coklat, dan kombinasi Keju-Coklat, Jasuke Maz D menyasar konsumen dari berbagai kalangan, mulai dari anak-anak sekolah hingga pekerja kantoran yang membutuhkan camilan praktis namun tetap lezat dan bergizi.
+    </p>
+
+    <p style="animation: fadeInUp 1.4s ease-in-out; text-align: center; line-height: 2; color: #333; font-size: 1.05rem; margin: 0 auto 24px auto; max-width: 800px;">
+      Jasuke Maz D berkomitmen untuk menggunakan bahan baku lokal yang segar langsung dari petani setempat. Strategi ini bukan hanya meningkatkan kualitas produk, tapi juga memberdayakan ekonomi lokal. Penggunaan platform digital seperti WhatsApp, Instagram, dan GrabFood juga menjadi bagian dari strategi pemasaran modern Jasuke Maz D.
+    </p>
+
+    <p style="animation: fadeInUp 1.6s ease-in-out; text-align: center; line-height: 2; color: #333; font-size: 1.05rem; margin: 0 auto 24px auto; max-width: 800px;">
+      Artikel ini disusun sebagai bagian dari tugas pengembangan digitalisasi UMKM dan diharapkan menjadi inspirasi bagi wirausahawan muda lainnya untuk terus berinovasi.
+    </p>
+  </div>
+</section>
+
 
 
     <footer>
