@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="google-site-verification" content="j4xjHQETVR0xjswJhYvObQo3CScD7A927k9yYUdgodY" />
   <title>Jasuke Maz D</title>
-  ...
-</head>
+  <meta name="description" content="Jasuke Maz D - Camilan sehat berbahan dasar jagung manis lokal.">
+  <meta name="keywords" content="jasuke, jagung susu keju, camilan sehat, UMKM Cimahi">
+  <meta name="author" content="Dinar Jhonata">
 
-  
   <style>
     * {
       margin: 0;
@@ -37,7 +36,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 40px;
+      padding: 15px 20px;
       z-index: 999;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
@@ -48,285 +47,92 @@
       font-weight: 700;
     }
 
-    .navbar ul {
+    .burger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #e65100;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links ul {
       list-style: none;
       display: flex;
       gap: 30px;
     }
 
-    .navbar ul li a {
+    .nav-links ul li a {
       text-decoration: none;
       color: #333;
       font-weight: 600;
       transition: color 0.3s ease;
     }
 
-    .navbar ul li a:hover {
+    .nav-links ul li a:hover {
       color: #ff6f00;
     }
 
-    .wrapper {
-      padding-top: 90px;
-    }
-
-    header {
-      background: url('jasuke web.jpg') no-repeat center center/cover;
-      height: 100vh;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    header h2 {
-      font-size: 3rem;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 15px;
-      max-width: 600px;
-      margin-inline: auto;
-    }
-
-    header a button {
-      margin-top: 25px;
-      padding: 12px 28px;
-      background: #ff6f00;
-      border: none;
-      color: white;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    header a button:hover {
-      background: #e65100;
-    }
-
-    section {
-      padding: 60px 20px;
-      animation: fadeInUp 1s ease-in-out;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .product-card {
-     background: #fff;
-     border-radius: 16px;
-     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-     overflow: hidden;
-     text-align: center;
-     transition: all 0.4s ease-in-out;
-     transform: scale(1);
-    }
-
-    .product-card:hover {
-      transform: scale(1.1);
-    }
-
-    .product-card img {
-      transform: scale(1.05);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    }
-
-    .product-card h3 {
-      margin-top: 15px;
-      font-size: 1.3rem;
-    }
-
-    .product-card p {
-      color: #e65100;
-      font-weight: bold;
-    }
-
-    .product-card a button {
-      width: 80%;
-      margin: 8px 0;
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      background-color: #ff9800;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .product-card a button:hover {
-      background-color: #e65100;
-    }
-
-    .profile-center {
-       text-align: center;
-       max-width: 800px;
-       margin: 0 auto;
-       background: #fff7e0;
-       padding: 40px 30px;
-       border-radius: 20px;
-       box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-     }
-
-
-    .profile img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #ff6f00;
-      color: white;
-      font-weight: 500;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
+    @media (max-width: 768px) {
+      .burger {
+        display: block;
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .nav-links ul li a {
+        color: #333;
       }
     }
-  @media (max-width: 768px) {
-  .wrapper {
-    padding-top: 70px;
-  }
-
-  header {
-    height: auto;
-    padding: 60px 20px;
-    background-size: cover;
-  }
-
-  header h2 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  .product-card {
-    width: 100% !important;
-    max-width: 100%;
-  }
-
-  #menu {
-    padding: 60px 20px !important;
-  }
-
-  #menu > div:first-child h2 {
-    font-size: 1.6rem !important;
-  }
-
-  #Contact {
-    padding: 60px 20px !important;
-  }
-
-  #Contact .contact-box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gallery {
-    flex-direction: column;
-    gap: 1.2rem !important;
-  }
-
-  .gallery img {
-    width: 220px !important;
-    height: 220px !important;
-  }
-
-  section.about .profile-center {
-    padding: 20px;
-  }
-
-  .artikel {
-    padding: 20px !important;
-  }
-
-  .artikel p {
-    font-size: 1rem !important;
-    padding: 0 10px;
-  }
-
-  footer {
-    font-size: 0.8rem;
-    padding: 20px;
-  }
-}
-
   </style>
-
-  <meta name="description" content="Jasuke Maz D - Camilan sehat berbahan dasar jagung manis lokal.">
-  <meta name="keywords" content="jasuke, jagung susu keju, camilan sehat, UMKM Cimahi">
-  <meta name="author" content="Dinar Jhonata">
 </head>
 <body>
-
-  <!-- Navbar -->
   <nav class="navbar">
     <h1>JASUKE MAZ D</h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#menu">Product</a></li>
-      <li><a href="#about us">about us</a></li>
-      <li><a href="#Contact">Contact</a></li>
-    </ul>
+    <div class="burger" onclick="toggleMenu()">&#9776;</div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Product</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <div class="wrapper">
-    <!-- Hero -->
-    <header id="home">
-      <section class="hero">
-  <div class="gallery" style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 3rem;">
-  </div>
-</section>
 
-      <h2>JASUKE MAZ D</h2>
-      <p>Nikmati kelezatan Jasuke yang hangat, praktis, dan penuh cinta lokal! Tersedia rasa Milo, Coklat, Keju, dan Kombinasi Lezat!</p>
-      <a href="#menu"><button>Lihat Menu</button></a>
+    <!-- Hero Section -->
+    <header id="home" style="background: url('jasuke web.jpg') no-repeat center center/cover; height: 100vh; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; padding: 0 20px;">
+      <h2 style="font-size: 3rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">JASUKE MAZ D</h2>
+      <p style="font-size: 1.2rem; margin-top: 15px; max-width: 600px; margin-inline: auto;">Nikmati kelezatan Jasuke yang hangat, praktis, dan penuh cinta lokal!</p>
+      <a href="#menu"><button style="margin-top: 25px; padding: 12px 28px; background: #ff6f00; border: none; color: white; border-radius: 10px; font-weight: bold; font-size: 1rem; cursor: pointer;">Lihat Menu</button></a>
     </header>
-    
- <!-- Profil -->
-<section class="about" id="about us">
-  <div class="profile-center">
-    <h3>About Us</h3>
-    <p>
-      <strong>Jasuke Maz D</strong> adalah sebuah usaha mikro yang dikelola oleh Dinar Jhonata,
-      berlokasi di Kost Pondok Barokah, Cimahi Selatan. UMKM ini hadir dengan misi untuk <em>menyediakan
-      camilan sehat dan nikmat yang diolah dari jagung lokal</em>, menjadikan setiap sajian tidak
-      hanya lezat, tetapi juga bernilai gizi tinggi.
-    </p>
-  </div>
-</section>  
-    <!-- Produk -->
-   <section id="menu" style="background-color: #fff8dc; padding: 90px 165px;">
+
+    <!-- Menu Produk -->
+    <section id="menu" style="background-color: #fff8dc; padding: 90px 165px;">
   <div style="text-align: center;">
     <h2 style="font-size: 2.2rem; margin-bottom: 10px; color: #ff6f00;">Our Menus</h2>
     <p style="color: #666;">Beragam pilihan Jasuke dengan cita rasa lokal favorit!</p>
@@ -377,47 +183,57 @@
   </div>
   </section>
 
-
-  </section>
-    <section id="Contact" style="background-color: #fff8ec; padding: 80px 70px;">
-  <div style="text-align: center;">
-    <h2 style="font-size: 2.2rem; margin-bottom: 10px; color: #ff6f00;">Pesan Sekarang</h2>
-    <p style="color: #555;">Langsung hubungi kami di Instagram, WhatsApp, dan Grabfood!</p>
-  </div>
-
-  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/jasuke_mazde/" target="_blank" style="text-decoration: none;">
-      <div style="width: 250px; background: #ffffff; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 30px; text-align: center;">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 70px; margin-bottom: 15px;">
-        <h3 style="color: #000;">@jasuke_mazde</h3>
-        <p style="color: #888;">Follow dan DM untuk order</p>
+      <!-- About Us Section -->
+    <section id="about" style="background-color: #fff7e0; padding: 60px 20px;">
+      <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 40px 30px; border-radius: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); text-align: center;">
+        <h2 style="color: #e65100; margin-bottom: 20px;">Tentang Kami</h2>
+        <p><strong>Jasuke Maz D</strong> adalah usaha mikro yang dikelola oleh Dinar Jhonata, berlokasi di Cimahi Selatan. Kami menyediakan camilan sehat berbahan dasar jagung manis lokal dengan rasa yang lezat dan bergizi seperti Milo, Coklat, dan Keju.</p>
       </div>
-    </a>
+    </section>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Original" target="_blank" style="text-decoration: none;">
-      <div style="width: 250px; background: #ffffff; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 30px; text-align: center;">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 90px; margin-bottom: 15px;">
-        <h3 style="color: #000;">WhatsApp Kami</h3>
-        <p style="color: #888;">Klik untuk langsung chat</p>
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #fff8ec; padding: 60px 20px;">
+      <div style="text-align: center;">
+        <h2 style="font-size: 2rem; margin-bottom: 10px; color: #ff6f00;">Pesan Sekarang</h2>
+        <p style="color: #555;">Hubungi kami melalui Instagram, WhatsApp, atau GrabFood</p>
       </div>
-    </a>
 
-    <!-- Grabfood -->
-    <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN" target="_blank" style="text-decoration: none;">
-      <div style="width: 250px; background: #ffffff; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 30px; text-align: center;">
-        <img src="grab.png" alt="Grabfood" style="width: 80px; margin-bottom: 15px;">
-        <h3 style="color: #000;">Order Sekarang</h3>
-        <p style="color: #888;">Klik untuk order</p>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/jasuke_mazde/" target="_blank" style="text-decoration: none;">
+          <div style="width: 250px; background: #ffffff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 60px; margin-bottom: 10px;">
+            <h3>@jasuke_mazde</h3>
+            <p style="color: #888;">DM untuk order langsung</p>
+          </div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6283898101912?text=Saya%20mau%20pesan%20Jasuke%20Original" target="_blank" style="text-decoration: none;">
+          <div style="width: 250px; background: #ffffff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 60px; margin-bottom: 10px;">
+            <h3>WhatsApp Kami</h3>
+            <p style="color: #888;">Klik untuk chat langsung</p>
+          </div>
+        </a>
+
+        <!-- GrabFood -->
+        <a href="https://r.grab.com/g/2-1-6-C7D3EUX2GKBAVN" target="_blank" style="text-decoration: none;">
+          <div style="width: 250px; background: #ffffff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+            <img src="grab.png" alt="Grabfood" style="width: 60px; margin-bottom: 10px;">
+            <h3>Order di GrabFood</h3>
+            <p style="color: #888;">Langsung klik untuk pesan</p>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-</section>
+    </section>
 
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 30px; background: #ff6f00; color: white; font-weight: 500;">
+      &copy; 2025 Jasuke Maz D
+    </footer>
 
-
-    <!-- Artikel -->
+   <!-- Artikel -->
 <section id="artikel">
   <div class="artikel" style="background: #ffffff; border: 1px solid #e0e0e0; box-shadow: 0 8px 24px rgba(0,0,0,0.1); padding: 40px 30px; border-radius: 16px; animation: fadeInUp 1s ease-in-out; text-align: center;">
     <h2 style="text-align:center; color:#e65100; animation: fadeIn 1.5s ease-in-out; margin-bottom: 30px;">
@@ -442,12 +258,15 @@
   </div>
 </section>
 
+  </div> <!-- Akhir dari .wrapper -->
 
-
-    <footer>
-      2025 Jasuke Maz 
-    </footer>
-  </div>
+  <!-- JavaScript untuk burger menu -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
 
 </body>
-</html>       
+</html>
+
